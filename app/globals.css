@@ -41,6 +41,12 @@
   .banner-heading {
     font-family : 'druk-wide'
   }
+
+  .counter-custom {
+    font-size: 35px;
+    font-family : 'druk wide';
+    font-weight: 900;
+  }
   
 * {
   font-family: 'Lato', sans-serif;

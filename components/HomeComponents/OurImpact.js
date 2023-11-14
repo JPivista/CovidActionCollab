@@ -4,6 +4,8 @@ import React, { startTransition } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CountUp from 'react-countup'
 
+import '../../app/globals.css'
+
 const OurImpact = () => {
 
 
@@ -15,7 +17,7 @@ const OurImpact = () => {
                         <h5 className='text-white'>
                             <span className='spanlightbefore d-lg-inline-block d-none'>
                             </span>
-                            OUR ACTION
+                            OUR IMPACT
                             <span className='spanlightafter d-lg-inline-block d-none'>
                             </span>
                         </h5>
@@ -24,7 +26,7 @@ const OurImpact = () => {
                         <Col>
                             <h1>
                                 <CountUp
-                                    className='text-white'
+                                    className='text-white counter-custom '
                                     start={0}
                                     end={353}
                                     scrollSpyDelay={3}
@@ -37,20 +39,21 @@ const OurImpact = () => {
                         <Col>
                             <h1>
                                 <CountUp
-                                    className='text-white'
+                                    className='text-white counter-custom'
                                     start={0}
                                     end={13}
                                     suffix="M"
                                 />
                             </h1>
                             <p className='text-white'>
-                                People Reached
+                                Domestic Services Delivered
+
                             </p>
                         </Col>
                         <Col>
                             <h1>
                                 <CountUp
-                                    className='text-white'
+                                    className='text-white counter-custom'
                                     start={100}
                                     end={1937}
                                     // decimals={0}
