@@ -6,7 +6,7 @@ import { Col, Container } from 'react-bootstrap'
 const HeroBanner = () => {
     const bannerBg = {
         backgroundImage: 'url("/home_hero_banner.jpg")',
-        minHeight: '100vh',
+        minHeight: '140vh',
         backgroundRepeat: 'no-repeat',
         // backgroundPosition: 'center',
         backgroundSize: 'cover'
@@ -15,8 +15,8 @@ const HeroBanner = () => {
 
     return (
         <>
-            <Container fluid style={bannerBg}>
-                <Container style={{}}>
+            <Container fluid style={bannerBg} className='d-flex flex-column align-items-center justify-content-center'>
+                <Container >
                     <Col className='d-flex flex-column align-items-center jus gap-3'>
                         <Col className='text-center'>
                             <p>

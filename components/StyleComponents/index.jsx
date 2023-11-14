@@ -3,7 +3,7 @@ import React from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import "react-multi-carousel/lib/styles.css";
+import "react-multi-carousel/lib/styles.css";
 
 
 const index = () => {

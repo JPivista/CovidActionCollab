@@ -6,17 +6,17 @@ import '../StyleComponents'
 import OurAction from './OurAction'
 import ImpactStories from './ImpactStories'
 import OurImpact from './OurImpact'
-import JoinCac from './JoinCac'
+import Footer from '../SharedComponents/Footer/'
 
 const index = () => {
   return (
     <>
         <Header />
-        <HeroBanner />
-        <OurAction />
-        <ImpactStories />
-        <OurImpact />
-        <JoinCac />
+          <HeroBanner />
+          <OurAction />
+          <ImpactStories />
+          <OurImpact />
+        <Footer />
     </>
   )
 }
