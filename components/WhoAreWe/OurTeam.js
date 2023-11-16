@@ -9,8 +9,8 @@ const OurTeam = () => {
     return (
         <>
             <Container>
-                <Row className='d-flex flex-md-row flex-wrap flex-column justify-content-center align-items-center'>
-                    <Col className='text-center' lg={4} md={6}>
+                <Row className='d-flex flex-md-row flex-wrap flex-column  align-items-center'>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/aravind_kumar_1.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link
@@ -28,7 +28,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/deepali_khanna_2.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="https://www.linkedin.com/in/deepali-khanna1027/" className='our-team-name text-decoration-none' >
@@ -43,7 +43,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/ganesh_natrajan_3.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -58,7 +58,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/madan_padki_4.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -72,7 +72,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/ragunathan_5.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -87,7 +87,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/naina_6.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -102,7 +102,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/naina_6.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -117,7 +117,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/rajeev_sadanandan_8.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -132,7 +132,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/tucker_9.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -147,7 +147,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/shiv_kumar_10.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -162,7 +162,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/srinivas_uppuluri_11.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -177,7 +177,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/bhat-12.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -192,7 +192,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/swarup_sarkar_13.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -207,7 +207,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/moutushi_sengupta_14.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -222,7 +222,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/ben_pyne_15.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -237,7 +237,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/ben_pyne_15.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
@@ -252,7 +252,7 @@ const OurTeam = () => {
                         </Col>
                     </Col>
 
-                    <Col className='text-center' lg={4} md={6}>
+                    <Col className='text-center align-self-stretch' lg={4} md={6}>
                         <Image src='/who_are_we/labournet_gayathri_vasudevan_17.png' alt='' fluid />
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >

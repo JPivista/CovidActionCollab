@@ -161,3 +161,21 @@ margin-left: 15px;
 .liStyle {
   font-size: 18px !important;
 }
+
+/* cac partners */
+.hover-cac-partner-img {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  top:0;
+  padding: 15px;
+  background: #4C4C4C;
+  opacity: .9;
+}
+
+.hover-cac-img-show:hover .hover-cac-partner-img {
+  display: flex;
+  align-items: center;
+}

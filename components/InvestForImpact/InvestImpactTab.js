@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '../../app/globals.css'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Image, Row } from 'react-bootstrap'
 
 const InvestImpactTab = () => {
     return (
@@ -18,6 +18,8 @@ const InvestImpactTab = () => {
 
                 <Row className='d-flex flex-lg-row flex-column gap-2'>
                     <Col>
+                        <Image src="/invest_impact/syndicate_fund.svg"
+                            className='p-4 bg-black rounded-circle' width={160} alt="" />
                         <h3 className='text-center'>
                             The
                             Syndicated
@@ -26,6 +28,8 @@ const InvestImpactTab = () => {
                     </Col>
 
                     <Col>
+                        <Image src="/invest_impact/specific_initatives_support.svg"
+                            className='p-4 bg-black rounded-circle' width={160} alt="" />
                         <h3 className='text-center'>
                             Specific
                             initiatives
@@ -34,6 +38,8 @@ const InvestImpactTab = () => {
                     </Col>
 
                     <Col>
+                        <Image src="/invest_impact/community_support.svg"
+                            className='p-4 bg-black rounded-circle' width={160} alt="" />
                         <h3 className='text-center'>
                             Specific
                             communities
@@ -42,6 +48,8 @@ const InvestImpactTab = () => {
                     </Col>
 
                     <Col>
+                        <Image src="/invest_impact/geographics_support.svg"
+                            className='p-4 bg-black rounded-circle' width={160} alt="" />
                         <h3 className='text-center'>
                             Specific
                             geographies
@@ -50,6 +58,8 @@ const InvestImpactTab = () => {
                     </Col>
 
                     <Col>
+                        <Image src="/invest_impact/partners_support.svg"
+                            className='p-4 bg-black rounded-circle' width={160} alt="" />
                         <h3 className='text-center'>
                             Specific
                             partners

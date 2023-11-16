@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Header from '../SharedComponents/Header'
+import Footer from '../SharedComponents/Footer'
+
 import KnowledgeRepoBanner from './KnowledgeRepoBanner'
 import KnowledgeRepoSlider from './KnowledgeRepoSlider'
 
@@ -14,6 +16,7 @@ const index = () => {
         <KnowledgeRepoBanner />
         <KnowledgeRepoSlider />
         <KnowledgeTap />
+      <Footer />
     </>
   )
 }

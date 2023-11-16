@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from '../SharedComponents/Header'
+import Footer from '../SharedComponents/Footer'
 
 import '../StyleComponents'
 import WhoAreWeBanner from './WhoAreWeBanner'
@@ -11,9 +12,10 @@ const index = () => {
   return (
     <>
         <Header />
-        <WhoAreWeBanner />
-        <ContentWhoWeAre />
-        <OurTeam />
+          <WhoAreWeBanner />
+          <ContentWhoWeAre />
+          <OurTeam />
+        <Footer />
     </>
   )
 }

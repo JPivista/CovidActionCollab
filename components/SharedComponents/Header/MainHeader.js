@@ -141,10 +141,10 @@ const MainHeader = () => {
                                 <Link href="/vaxnow" className='text-decoration-none text-white'>
                                     VaxNow
                                 </Link>
-                                <Link href="#" className='text-decoration-none text-white'>
+                                <Link href="https://precisionhealth.in/" target='_blank' className='text-decoration-none text-white'>
                                     Precision Health
                                 </Link>
-                                <Link href="#" className='text-decoration-none text-white'>
+                                <Link href="https://call4svasthswasti.in/" target='_blank' className='text-decoration-none text-white'>
                                     Call4Svasth
                                 </Link>
                             </Col>
@@ -152,7 +152,7 @@ const MainHeader = () => {
                             {/* Col 8 */}
                             <Col className='d-flex flex-column text-center'>
 
-                                <Link href="#" className='text-decoration-none text-white fw-bold'>
+                                <Link href="apply-to-join" className='text-decoration-none text-white fw-bold'>
                                     APPLY TO JOIN
                                 </Link>
                                 <Link href="#" className='text-decoration-none text-white fw-bold'>
@@ -375,7 +375,7 @@ const MainHeader = () => {
                         </Col>
 
                         <Col>
-                            <Link href='#' className='text-decoration-none text-white'>
+                            <Link href='/apply-to-join' className='text-decoration-none bg-white covid-blue' style={{ fontSize: '16px !important' }}>
                                 APPLY TO JOIN
                             </Link>
                         </Col>

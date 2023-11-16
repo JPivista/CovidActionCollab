@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from '../SharedComponents/Header'
+import Footer from '../SharedComponents/Footer'
 
 import '../StyleComponents'
 import ImpactStoriesBanner from './ImpactStoriesBanner'
@@ -12,6 +13,7 @@ const index = () => {
             <Header />
             <ImpactStoriesBanner />
             <ImpactStoriesTap />
+            <Footer />
         </>
     )
 }

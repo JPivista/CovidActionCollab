@@ -93,37 +93,59 @@ const HeroBanner = () => {
                             removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
                         >
                             <div>
-                                <Image src='/home/resillence_works.png' alt='' fluid />
+                                <Link href='https://www.resilienceworks.in/'
+                                    target='_black'>
+                                    <Image src='/home/resillence_works.png' alt='' fluid />
+                                </Link>
                             </div>
                             <div>
                                 <Image src='/home/atma_2.png' alt='' fluid />
                             </div>
                             <div>
-                                <Image src='/home/arthan_3.png' alt='' fluid />
+                                <Link href='https://arthancareers.com/'
+                                    target='_black'>
+                                    <Image src='/home/arthan_3.png' alt='' fluid />
+                                </Link>
                             </div>
                             <div>
-                                <Image src='/home/fieldscope_4.png' alt='' fluid />
+                                <Link href='https://fieldscope.in/'
+                                    target='_black'>
+                                    <Image src='/home/fieldscope_4.png' alt='' fluid />
+                                </Link>
                             </div>
                             <div>
+
                                 <Image src='/home/viwera_5.png' alt='' fluid />
                             </div>
                             <div>
                                 <Image src='/home/viwera_5.png' alt='search' fluid />
                             </div>
                             <div>
-                                <Image src='/home/selco_foundation.png' alt='search' fluid />
+                                <Link href='https://www.selcofoundation.org/'
+                                    target='_black'>
+                                    <Image src='/home/selco_foundation.png' alt='search' fluid />
+                                </Link>
                             </div>
 
                             <div>
-                                <Image src='/home/srijan.png' alt='search' fluid />
+                                <Link href='https://srijaneksoch.org/'
+                                    target='_black'>
+                                    <Image src='/home/srijan.png' alt='search' fluid />
+                                </Link>
                             </div>
 
                             <div>
-                                <Image src='/home/save_the_children.png' alt='search' fluid />
+                                <Link href='https://www.savethechildrenindia.org/'
+                                    target='_black'>
+                                    <Image src='/home/save_the_children.png' alt='search' fluid />
+                                </Link>
                             </div>
 
                             <div>
-                                <Image src='/home/sesame_workshop.png' alt='search' fluid />
+                                <Link href='https://www.sesameworkshopindia.org/'
+                                    target='_black'>
+                                    <Image src='/home/sesame_workshop.png' alt='search' fluid />
+                                </Link>
                             </div>
                         </Carousel>
                     </Col>

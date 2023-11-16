@@ -1,8 +1,12 @@
 import React from 'react'
 
+import MediaComponents from '/components/Media'
+
 const page = () => {
     return (
-        <div>media_new</div>
+        <>
+            <MediaComponents />
+        </>
     )
 }
 
