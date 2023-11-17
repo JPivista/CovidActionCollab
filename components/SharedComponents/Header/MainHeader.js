@@ -60,105 +60,105 @@ const MainHeader = () => {
                         <Row>
                             {/* Col 1 */}
                             <Col>
-                                <Link href="/" className='text-decoration-none text-white fw-bold'>
+                                <Link href="/" className='text-decoration-none text-white fw-bold custom-header-style'>
                                     HOME
                                 </Link>
                             </Col>
 
                             {/* Col 2 */}
                             <Col className='d-flex flex-column gap-1'>
-                                <Link href="/what-is-cac" className='text-decoration-none text-white fw-bold lh-1 mb-3'>
+                                <Link href="/what-is-cac" className='text-decoration-none text-white fw-bold lh-1 mb-3 custom-header-style'>
                                     LEARN <br />
                                     ABOUT US
                                 </Link>
-                                <Link href="/what-is-cac" className='text-decoration-none text-white'>
+                                <Link href="/what-is-cac" className='text-decoration-none text-white custom-header-style'>
                                     What is CAC?
                                 </Link>
-                                <Link href="/who-we-are" className='text-decoration-none text-white'>
+                                <Link href="/who-we-are" className='text-decoration-none text-white custom-header-style'>
                                     Who we are
                                 </Link>
-                                <Link href="/cac-partners" className='text-decoration-none text-white'>
+                                <Link href="/cac-partners" className='text-decoration-none text-white custom-header-style'>
                                     CAC Partners
                                 </Link>
-                                <Link href="/media_new" className='text-decoration-none text-white'>
+                                <Link href="/media_new" className='text-decoration-none text-white custom-header-style'>
                                     Media
                                 </Link>
                             </Col>
 
                             {/* Col 3 */}
                             <Col className='d-flex flex-column gap-1'>
-                                <Link href="/our-action" className='text-decoration-none text-white fw-bold lh-1 mb-3'>
+                                <Link href="/our-action" className='text-decoration-none text-white fw-bold lh-1 mb-3 custom-header-style'>
                                     OUR <br />
                                     ACTION
                                 </Link>
-                                <Link href="/our-action/#calibrated" className='text-decoration-none text-white'>
+                                <Link href="/our-action/#calibrated" className='text-decoration-none text-white custom-header-style'>
                                     Calibrated Services
                                 </Link>
-                                <Link href="/our-action/#impact" className='text-decoration-none text-white'>
+                                <Link href="/our-action/#impact" className='text-decoration-none text-white custom-header-style'>
                                     Impact Canvas
                                 </Link>
-                                <Link href="/our-action/#cac" className='text-decoration-none text-white'>
+                                <Link href="/our-action/#cac" className='text-decoration-none text-white custom-header-style'>
                                     CAC Exchange
                                 </Link>
                             </Col>
 
                             {/* Col 4 */}
                             <Col className='d-flex flex-column gap-1'>
-                                <Link href="/impact-stories" className='text-decoration-none text-white fw-bold lh-1 mb-3'>
+                                <Link href="/impact-stories" className='text-decoration-none text-white fw-bold lh-1 mb-3 custom-header-style'>
                                     IMPACT DASHBOARD
                                 </Link>
-                                <Link href="/our-impact" className='text-decoration-none text-white'>
+                                <Link href="/our-impact" className='text-decoration-none text-white custom-header-style'>
                                     Our Impact
                                 </Link>
-                                <Link href="/impact-stories" className='text-decoration-none text-white'>
+                                <Link href="/impact-stories" className='text-decoration-none text-white custom-header-style'>
                                     Impact Stories
                                 </Link>
                             </Col>
 
                             {/* Col 5 */}
                             <Col className='d-flex flex-column gap-1'>
-                                <Link href="/knowledge-repository" className='text-decoration-none text-white fw-bold lh-1 mb-3'>
+                                <Link href="/knowledge-repository" className='text-decoration-none text-white fw-bold lh-1 mb-3 custom-header-style'>
                                     KNOWLEDGE
                                     REPOSITORY
                                 </Link>
-                                <Link href="/invest-for-impact" className='text-decoration-none text-white fw-bold lh-1'>
+                                <Link href="/invest-for-impact" className='text-decoration-none text-white fw-bold lh-1 custom-header-style'>
                                     SUPPORT
                                     CAC
                                 </Link>
-                                <Link href="/invest-for-impact" className='text-decoration-none text-white'>
+                                <Link href="/invest-for-impact" className='text-decoration-none text-white custom-header-style'>
                                     Invest for Impact
                                 </Link>
-                                <Link href="/donate" className='text-decoration-none text-white'>
+                                <Link href="/donate" className='text-decoration-none text-white custom-header-style'>
                                     Donate
                                 </Link>
                             </Col>
 
                             {/* Col 6 */}
                             <Col className='d-flex flex-column gap-1'>
-                                <Link href="#" className='text-decoration-none text-white fw-bold lh-1 mb-3'>
+                                <Link href="#" className='text-decoration-none text-white fw-bold lh-1 mb-3 custom-header-style'>
                                     SPECIAL FOCUS AREAS
                                 </Link>
-                                <Link href="/vaxnow" className='text-decoration-none text-white'>
+                                <Link href="/vaxnow" className='text-decoration-none text-white custom-header-style'>
                                     VaxNow
                                 </Link>
-                                <Link href="https://precisionhealth.in/" target='_blank' className='text-decoration-none text-white'>
+                                <Link href="https://precisionhealth.in/" target='_blank' className='text-decoration-none text-white custom-header-style'>
                                     Precision Health
                                 </Link>
-                                <Link href="https://call4svasthswasti.in/" target='_blank' className='text-decoration-none text-white'>
+                                <Link href="https://call4svasthswasti.in/" target='_blank' className='text-decoration-none text-white custom-header-style'>
                                     Call4Svasth
                                 </Link>
                             </Col>
 
                             {/* Col 8 */}
-                            <Col className='d-flex flex-column text-center'>
+                            <Col className='d-flex flex-column text-center gap-2'>
 
-                                <Link href="apply-to-join" className='text-decoration-none text-white fw-bold'>
+                                <Link href="apply-to-join" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
                                     APPLY TO JOIN
                                 </Link>
-                                <Link href="#" className='text-decoration-none text-white fw-bold'>
+                                <Link href="#" className='text-decoration-none text-white fw-bold custom-header-style login-btn'>
                                     LOGIN
                                 </Link>
-                                <Link href="#" className='text-decoration-none text-white fw-bold'>
+                                <Link href="#" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
                                     CAREERS
                                 </Link>
                             </Col>
@@ -171,7 +171,7 @@ const MainHeader = () => {
                 <Container className='py-3'>
                     <Row>
                         <Col>
-                            <Link href='/' className='text-decoration-none text-white'>
+                            <Link href='/' className='text-decoration-none text-white custom-header-style'>
                                 <Image src='/logo.png' alt='logo' width={150} height={44} />
                             </Link>
                         </Col>
@@ -192,11 +192,10 @@ const MainHeader = () => {
             </Container>
 
             {isVisibleMobile && (
-
                 <Container fluid className='d-lg-none d-flex  position-absolute mt-5 pt-2'>
-                    <Container className='d-flex flex-column bg-primary'>
+                    <Container className='d-flex flex-column gap-2' style={{ background: '#2A7A99' }}>
                         <Col>
-                            <Link href='/' className='text-decoration-none text-white'>
+                            <Link href='/' className='text-decoration-none text-white custom-header-style'>
                                 SITE HOME
                             </Link>
                         </Col>
@@ -207,7 +206,7 @@ const MainHeader = () => {
                             >
                                 <Col >
                                     <Link href='#'
-                                        className='text-decoration-none text-white'
+                                        className='text-decoration-none text-white custom-header-style'
                                     >
                                         LEARN ABOUT US
                                     </Link>
@@ -218,22 +217,20 @@ const MainHeader = () => {
                                     style={{ color: 'white' }}>
                                     {isShow ? '-' : '+'}
                                 </Col>
-
-
                             </Col>
 
                             {isShow && (
                                 <Col className='ps-3 d-flex flex-column'>
-                                    <Link href="/what-is-cac" className='text-decoration-none text-white'>
+                                    <Link href="/what-is-cac" className='text-decoration-none text-white custom-header-style'>
                                         What is CAC?
                                     </Link>
-                                    <Link href="/who-we-are" className='text-decoration-none text-white'>
+                                    <Link href="/who-we-are" className='text-decoration-none text-white custom-header-style'>
                                         Who we are
                                     </Link>
-                                    <Link href="/cac-partners" className='text-decoration-none text-white'>
+                                    <Link href="/cac-partners" className='text-decoration-none text-white custom-header-style'>
                                         CAC Partners
                                     </Link>
-                                    <Link href="/media_new" className='text-decoration-none text-white'>
+                                    <Link href="/media_new" className='text-decoration-none text-white custom-header-style'>
                                         Media
                                     </Link>
                                 </Col>
@@ -247,7 +244,7 @@ const MainHeader = () => {
                             >
                                 <Col >
                                     <Link href='#'
-                                        className='text-decoration-none text-white'
+                                        className='text-decoration-none text-white custom-header-style'
                                     >
                                         OUR ACTION
                                     </Link>
@@ -262,19 +259,18 @@ const MainHeader = () => {
 
                             {isShowOurAction && (
                                 <Col className='ps-3 d-flex flex-column'>
-                                    <Link href="/our-action/#calibrated" className='text-decoration-none text-white'>
+                                    <Link href="/our-action/#calibrated" className='text-decoration-none text-white custom-header-style'>
                                         Calibrated Services
                                     </Link>
-                                    <Link href="#" className='text-decoration-none text-white'>
+                                    <Link href="#" className='text-decoration-none text-white custom-header-style'>
                                         Impact Canvas
                                     </Link>
-                                    <Link href="#" className='text-decoration-none text-white'>
+                                    <Link href="#" className='text-decoration-none text-white custom-header-style'>
                                         CAC Exchange
                                     </Link>
                                 </Col>
                             )}
                         </Col>
-
 
                         <Col className='d-flex flex-column'>
                             <Col
@@ -283,7 +279,7 @@ const MainHeader = () => {
                             >
                                 <Col >
                                     <Link href=''
-                                        className='text-decoration-none text-white'
+                                        className='text-decoration-none text-white custom-header-style'
                                     >
                                         IMPACT DASHBOARD
                                     </Link>
@@ -298,10 +294,10 @@ const MainHeader = () => {
 
                             {isShowImpactDashboard && (
                                 <Col className='ps-3 d-flex flex-column'>
-                                    <Link href="/our-impact" className='text-decoration-none text-white'>
+                                    <Link href="/our-impact" className='text-decoration-none text-white custom-header-style'>
                                         Our Impact
                                     </Link>
-                                    <Link href="/impact-stories" className='text-decoration-none text-white'>
+                                    <Link href="/impact-stories" className='text-decoration-none text-white custom-header-style'>
                                         Impact Stories
                                     </Link>
                                 </Col>
@@ -315,7 +311,7 @@ const MainHeader = () => {
                             >
                                 <Col >
                                     <Link href='#'
-                                        className='text-decoration-none text-white'
+                                        className='text-decoration-none text-white custom-header-style'
                                     >
                                         KNOWLEDGE REPOSITORY
                                     </Link>
@@ -331,10 +327,10 @@ const MainHeader = () => {
 
                             {isShowKnowledgeRepo && (
                                 <Col className='ps-3 d-flex flex-column' >
-                                    <Link href="/our-impact" className='text-decoration-none text-white'>
+                                    <Link href="/our-impact" className='text-decoration-none text-white custom-header-style'>
                                         Our Impact
                                     </Link>
-                                    <Link href="/impact-stories" className='text-decoration-none text-white'>
+                                    <Link href="/impact-stories" className='text-decoration-none text-white custom-header-style'>
                                         Impact Stories
                                     </Link>
                                 </Col>
@@ -348,9 +344,9 @@ const MainHeader = () => {
                             >
                                 <Col >
                                     <Link href='#'
-                                        className='text-decoration-none text-white'
+                                        className='text-decoration-none text-white custom-header-stylee'
                                     >
-                                        KNOWLEDGE REPOSITORY
+                                        SUPPORT CAC
                                     </Link>
                                 </Col>
 
@@ -364,10 +360,10 @@ const MainHeader = () => {
 
                             {isShowSupport && (
                                 <Col className='ps-3 d-flex flex-column' >
-                                    <Link href="/invest-for-impact" className='text-decoration-none text-white'>
+                                    <Link href="/invest-for-impact" className='text-decoration-none text-white custom-header-style'>
                                         Invest for Impact
                                     </Link>
-                                    <Link href="/donate" className='text-decoration-none text-white'>
+                                    <Link href="/donate" className='text-decoration-none text-white custom-header-style'>
                                         Donate
                                     </Link>
                                 </Col>
@@ -375,19 +371,16 @@ const MainHeader = () => {
                         </Col>
 
                         <Col>
-                            <Link href='/apply-to-join' className='text-decoration-none bg-white covid-blue' style={{ fontSize: '16px !important' }}>
+                            <Link href='/apply-to-join' className='text-decoration-none bg-white covid-blue apply-to-join-btn p-3' style={{ fontSize: '16px !important' }}>
                                 APPLY TO JOIN
                             </Link>
                         </Col>
 
                         <Col>
-                            <Link href='#' className='text-decoration-none text-white'>
+                            <Link href='#' className='text-decoration-none text-white login-btn '>
                                 LOG IN
                             </Link>
                         </Col>
-
-
-
                     </Container>
                 </Container >
 

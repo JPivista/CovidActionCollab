@@ -1,3 +1,16 @@
 .navbar-bg {
     background-image: linear-gradient(180deg, #2A7A99 88%, #0D4759 99%);
 }
+
+.custom-header-style {
+    font-size: 16px !important;
+}
+
+.custom-footer-style {
+    font-size: 16px !important;
+    font-weight: 400;
+}
+
+.apply-to-join-btn {
+    
+}

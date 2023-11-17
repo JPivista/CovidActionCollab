@@ -179,3 +179,17 @@ margin-left: 15px;
   display: flex;
   align-items: center;
 }
+
+.apply-to-join-btn {
+  background: white;
+  color: #2A7A99 !important;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.login-btn {
+  background: #FBD037;
+  color: #2A7A99 !important;
+  padding: 6px;
+  border-radius: 8px;
+}

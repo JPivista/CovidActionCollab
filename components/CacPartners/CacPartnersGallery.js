@@ -32,25 +32,25 @@ const CacPartnersGallery = () => {
             <Container className='py-3'>
                 <div className='d-flex flex-row flex-wrap gap-3 justify-content-center'>
                     <Button
-                        className={`btn-primary ${activeFilter === 'all' ? 'active' : ''}`}
+                        className={`bg-light ${activeFilter === 'all' ? 'active text-dark' : 'bg-covid-blue'}`}
                         onClick={() => handleFilter('all')}
                     >
                         ALL
                     </Button>
                     <Button
-                        className={`btn-primary ${activeFilter === 'implements' ? 'active' : ''}`}
+                        className={`bg-light ${activeFilter === 'implements' ? 'active text-dark' : 'bg-covid-blue'}`}
                         onClick={() => handleFilter('implements')}
                     >
                         IMPLEMENTERS
                     </Button>
                     <Button
-                        className={`btn-primary ${activeFilter === 'providers' ? 'active' : ''}`}
+                        className={`bg-light ${activeFilter === 'providers' ? 'active text-dark' : 'bg-covid-blue'}`}
                         onClick={() => handleFilter('providers')}
                     >
                         PROVIDERS
                     </Button>
                     <Button
-                        className={`btn-primary ${activeFilter === 'enablers' ? 'active' : ''}`}
+                        className={`bg-light ${activeFilter === 'enablers' ? 'active text-dark' : 'bg-covid-blue'}`}
                         onClick={() => handleFilter('enablers')}
                     >
                         ENABLERS
