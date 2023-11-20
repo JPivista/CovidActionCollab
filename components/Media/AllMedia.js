@@ -16,11 +16,12 @@ const AllMedia = () => {
         const fetchData = async () => {
             try {
                 // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/media');
-                const response = await axios.get('http://localhost:10049/wp-json/wp/v2/medianew?per_page=30');
+                // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/medianew?per_page=30');
+                const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/medianew');
                 const posts = response.data;
 
                 setDonateNowList(posts);
-                // console.log(posts);
+                console.log(posts);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -85,37 +86,38 @@ const AllMedia = () => {
 
                 <div className="row" >
                     {donateNowList.map((post) => (
-                        <div key={post.id} className="col-12 col-md-6 col-lg-4 p-2">
-                            <div className='p-2 card h-100' style={{ background: '#E9F1F5' }}>
-                                <a href={post.media_link} target='_blank'>Media Link: </a>
-                                <p> {post.media_heading} </p>
-                                <Image
-                                    src={post.media_image}
-                                    alt=''
-                                    fluid
-                                    height={100}
-                                />
-                                {post.acf && post.acf.media_name && (
-                                    <p>Media Name: {post.acf.media_name}</p>
-                                )}
-                                {post.acf && post.acf.media_title && (
-                                    <p>Media Title: {post.acf.media_title}</p>
-                                )}
-                                <Row className='d-flex flex-row '>
-                                    <Col className='d-flex flex-column justify-content-center'>
-                                        <p style={customFont}>
-                                            {post.publisher}
-                                        </p>
-                                    </Col>
-                                    <Col>
-                                        {/* <p>Date: {post.published_date}</p> */}
-                                        <p>
-                                            <b style={customFont}>
-                                                {formatDate(post.published_date)}
-                                            </b>
-                                        </p>
-                                    </Col>
-                                </Row>
+                        <div key={post.id} className="col-12 col-md-6 col-lg-4 p-2 rounded-0">
+                            <div className='p-3 card h-100' style={{ background: '#E9F1F5' }}>
+                                <a
+                                    href={post.media_link}
+                                    target='_blank'
+                                    className='text-decoration-none text-black'>
+
+                                    <Image src={post.media_image.guid} alt='' width="100%" />
+
+                                    <p> {post.media_heading} </p>
+                                    {post.acf && post.acf.media_name && (
+                                        <p>Media Name: {post.acf.media_name}</p>
+                                    )}
+                                    {post.acf && post.acf.media_title && (
+                                        <p>Media Title: {post.acf.media_title}</p>
+                                    )}
+                                    <Row className='d-flex flex-row '>
+                                        <Col className='d-flex flex-column justify-content-center'>
+                                            <p style={customFont}>
+                                                {post.publisher}
+                                            </p>
+                                        </Col>
+                                        <Col>
+                                            {/* <p>Date: {post.published_date}</p> */}
+                                            <p>
+                                                <b style={customFont}>
+                                                    {formatDate(post.published_date)}
+                                                </b>
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                </a>
                             </div>
                         </div>
                     ))}

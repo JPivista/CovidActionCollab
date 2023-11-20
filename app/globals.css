@@ -193,3 +193,24 @@ margin-left: 15px;
   padding: 6px;
   border-radius: 8px;
 }
+
+
+/* Home page slick slider */
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 32px !important; 
+  line-height: 0;
+  opacity: .75;
+  color: black !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.styles-for-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Change the number to the maximum number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
