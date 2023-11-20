@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 
 const page = () => {
-    const pathname = usePathname();
+    // const pathname = usePathname();
 
     return (
         <div>
