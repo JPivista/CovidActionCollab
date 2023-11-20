@@ -17,7 +17,8 @@ const ImpactStories = () => {
         const fetchData = async () => {
             try {
                 // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/media');
-                const response = await axios.get('http://localhost:10049/wp-json/wp/v2/impact-story?per_page=15');
+                // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/impact-story?per_page=15');
+                const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story');
                 const posts = response.data;
 
                 setImpactStories(posts);
