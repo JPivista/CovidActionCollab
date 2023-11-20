@@ -155,7 +155,7 @@ const MainHeader = () => {
                                 <Link href="apply-to-join" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
                                     APPLY TO JOIN
                                 </Link>
-                                <Link href="#" className='text-decoration-none text-white fw-bold custom-header-style login-btn'>
+                                <Link href="/log-in" className='text-decoration-none text-white fw-bold custom-header-style login-btn'>
                                     LOGIN
                                 </Link>
                                 <Link href="#" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
@@ -377,7 +377,7 @@ const MainHeader = () => {
                         </Col>
 
                         <Col>
-                            <Link href='#' className='text-decoration-none text-white login-btn '>
+                            <Link href='/log-in' className='text-decoration-none text-white login-btn '>
                                 LOG IN
                             </Link>
                         </Col>
