@@ -102,7 +102,7 @@ const KnowledgeTap = ({ }) => {
 
                         <Col>
                             <button
-                                onClick={() => handleTagClick(20)
+                                onClick={() => handleTagClick(18)
                                 }
                                 className='bg-transparent border-0'>
                                 <Row className='d-flex flex-row'>
