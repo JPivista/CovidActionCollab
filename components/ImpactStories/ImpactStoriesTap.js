@@ -24,7 +24,7 @@ const ImpactStoriesTap = () => {
                 const posts = response.data;
 
                 setCovidCollab(posts);
-                console.log(posts);
+                // console.log(posts);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -64,7 +64,7 @@ const ImpactStoriesTap = () => {
                         <Col>
                             <Col>
                                 <button
-                                    onClick={() => handleTagClick(28)}
+                                    onClick={() => handleTagClick(15)}
                                     className='bg-transparent border-0'>
                                     <Row className='d-flex flex-row '>
                                         <Col xs={2}>
