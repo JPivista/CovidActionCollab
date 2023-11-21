@@ -192,10 +192,7 @@ const DoanteTap = () => {
                                         {story.category_name}
                                     </h5>
                                     <p className='styles-for-ellipsis'>
-                                        <b>
-                                            {/* {story.title.rendered} */}
-                                            <div className='fw-bold' dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
-                                        </b>
+                                        <div dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
                                     </p>
                                     <p className='styles-for-ellipsis' >
                                         <div dangerouslySetInnerHTML={{ __html: story.beneficiary_description }} />

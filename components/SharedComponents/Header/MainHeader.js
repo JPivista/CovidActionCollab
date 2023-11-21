@@ -152,13 +152,13 @@ const MainHeader = () => {
                             {/* Col 8 */}
                             <Col className='d-flex flex-column text-center gap-2'>
 
-                                <Link href="apply-to-join" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
+                                <Link href="https://communityactioncollab.org/join-us/" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
                                     APPLY TO JOIN
                                 </Link>
                                 <Link href="/log-in" className='text-decoration-none text-white fw-bold custom-header-style login-btn'>
                                     LOGIN
                                 </Link>
-                                <Link href="#" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
+                                <Link href="https://communityactioncollab.org/contact-us/" className='text-decoration-none text-white fw-bold custom-header-style apply-to-join-btn'>
                                     CAREERS
                                 </Link>
                             </Col>
@@ -371,7 +371,7 @@ const MainHeader = () => {
                         </Col>
 
                         <Col>
-                            <Link href='/apply-to-join' className='text-decoration-none bg-white covid-blue apply-to-join-btn p-3' style={{ fontSize: '16px !important' }}>
+                            <Link href='https://communityactioncollab.org/join-us/' className='text-decoration-none bg-white covid-blue apply-to-join-btn p-3' style={{ fontSize: '16px !important' }}>
                                 APPLY TO JOIN
                             </Link>
                         </Col>
