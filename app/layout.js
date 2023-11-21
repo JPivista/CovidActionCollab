@@ -15,11 +15,11 @@ import Head from 'next/head'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <Head>
         <meta name="google-site-verification" content="R23Ey1YcgVLq43ENjiGfVOrj2kWAltzGzqy9TEolc7M" />
       </Head>
-      <body>{children}
+      <body>
+        {children}
 
         {/* Start Google Analytics Manager */}
         <Script
