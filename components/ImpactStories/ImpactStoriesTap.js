@@ -1,10 +1,45 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+'use client'
+
+import React, { useEffect, useState } from 'react'
+import { Col, Container, Image, Row } from 'react-bootstrap'
 
 import '../../app/globals.css'
-import Image from 'next/image'
+
+import axios from 'axios';
+
 
 const ImpactStoriesTap = () => {
+
+    const [impactStories, setImpactStories] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/media');
+                // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/impact-story?per_page=15');
+                const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story?per_page=15');
+                const posts = response.data;
+
+                setImpactStories(posts);
+                console.log(posts);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
+    }, []);
+
+    const font19px = {
+        fontSize: '19px'
+    }
+
+    const formatDate = (dateString) => {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = new Date(dateString).toLocaleDateString('en-US', options);
+        return formattedDate;
+    };
+
+
     return (
         <>
 
@@ -151,6 +186,36 @@ const ImpactStoriesTap = () => {
                                 </Col>
                             </Row>
                         </Col>
+                    </Col>
+
+
+
+                    <Col md={8} className='bg-light row'>
+                        {impactStories.map((story) => (
+                            <div key={story.id} className="col-12 col-lg-6 p-2 rounded-0">
+                                <div className='p-3 card h-100' style={{ background: '#E9F1F5' }}>
+                                    <div className='align-self-stretch p-1 rounded-3 overflow-y-hidden'>
+                                        <Image src={story.banner_image.guid} alt='' width="100%" />
+                                        <p className='styles-for-ellipsis'>
+                                            <b>
+                                                {/* {story.title.rendered} */}
+                                                <div className='fw-bold' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
+                                            </b>
+                                        </p>
+                                        <p className='styles-for-ellipsis' >
+                                            <div style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
+                                        </p>
+
+                                        <p>
+                                            <b style={font19px}>
+                                                {formatDate(story.published_date)}
+                                            </b>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+
                     </Col>
                 </Row>
             </Container>

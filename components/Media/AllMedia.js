@@ -95,13 +95,15 @@ const AllMedia = () => {
 
                                     <Image src={post.media_image.guid} alt='' width="100%" />
 
-                                    <p> {post.media_heading} </p>
-                                    {post.acf && post.acf.media_name && (
+                                    <p className='styles-for-ellipsis'>
+                                        {post.media_heading}
+                                    </p>
+                                    {/* {post.acf && post.acf.media_name && (
                                         <p>Media Name: {post.acf.media_name}</p>
                                     )}
                                     {post.acf && post.acf.media_title && (
                                         <p>Media Title: {post.acf.media_title}</p>
-                                    )}
+                                    )} */}
                                     <Row className='d-flex flex-row '>
                                         <Col className='d-flex flex-column justify-content-center'>
                                             <p style={customFont}>

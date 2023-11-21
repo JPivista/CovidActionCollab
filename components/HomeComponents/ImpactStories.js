@@ -22,7 +22,7 @@ const ImpactStories = () => {
                 const posts = response.data;
 
                 setImpactStories(posts);
-                console.log(posts);
+                // console.log(posts);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
