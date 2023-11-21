@@ -43,7 +43,7 @@ const KnowledgeTap = ({ }) => {
                 const posts = response.data;
 
                 setCovidCollabTap(posts);
-                console.log(posts);
+                // console.log(posts);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }

@@ -10,24 +10,49 @@ import axios from 'axios';
 
 const ImpactStoriesTap = () => {
 
-    const [impactStories, setImpactStories] = useState([]);
+    // const [impactStories, setImpactStories] = useState([]);
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story?per_page=15');
+    //             const posts = response.data;
+
+    //             setImpactStories(posts);
+    //             console.log(posts);
+    //         } catch (error) {
+    //             console.error('Error fetching data:', error);
+    //         }
+    //     };
+    //     fetchData();
+    // }, []);
+
+
+    const [covidCollab, setCovidCollab] = useState([]);
+    const [selectedTagId, setSelectedTagId] = useState(18); // Initialize with the default tag ID
+
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/media');
                 // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/impact-story?per_page=15');
-                const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story?per_page=15');
+                // const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story?per_page=15');
+                const response = await axios.get(`https://uat.covidactioncollab.org/wp-json/wp/v2/covidpost?tags=${selectedTagId}`);
                 const posts = response.data;
 
-                setImpactStories(posts);
+                setCovidCollab(posts);
                 console.log(posts);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
         fetchData();
-    }, []);
+    }, [selectedTagId]);
+
+    const handleTagClick = (tagId) => {
+        setSelectedTagId(tagId);
+    };
 
     const font19px = {
         fontSize: '19px'
