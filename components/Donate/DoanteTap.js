@@ -37,7 +37,7 @@ const DoanteTap = () => {
     return (
         <Container>
             <Row>
-                <Col md={5}>
+                {/* <Col md={5}>
                     <h5 className='text-black'>
                         <span className='spandarkbeforesm d-lg-inline-block d-none '>
                         </span>
@@ -179,12 +179,12 @@ const DoanteTap = () => {
                             </Col>
                         </Row>
                     </Col>
-                </Col>
+                </Col> */}
 
                 <Col>
                     <div className='row'>
                         {impactStories.map((story) => (
-                            <div key={story.id} className='col-12 col-md-6 py-2'>
+                            <div key={story.id} className='col-12 col-md-4 py-2'>
                                 <div className='p-1' >
                                     <Image src={story.upload_beneficiary_photo.guid} alt='' width="100%" height={200} />
 

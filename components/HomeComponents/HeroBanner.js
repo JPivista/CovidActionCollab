@@ -49,7 +49,7 @@ const HeroBanner = () => {
                         </Col>
 
                         <Col>
-                            <Col className='d-flex flex-row align-items-center justify-content-center align-content-center gap-3'>
+                            {/* <Col className='d-flex flex-row align-items-center justify-content-center align-content-center gap-3'>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35.168" height="69.895" fill='#fff' viewBox="0 0 35.168 69.895"><defs><style></style></defs><g transform="translate(-860.473 -866.673)"><path class="a" d="M878.055,866.673a17.581,17.581,0,0,0-17.582,17.581v16.7a17.724,17.724,0,0,0,10.668,16.185v-5.664a12.667,12.667,0,0,1-5.664-10.521l0-16.7a12.582,12.582,0,0,1,25.164,0v16.7a12.675,12.675,0,0,1-5.665,10.521v5.664a17.647,17.647,0,0,0,10.668-16.185l0-16.7a17.581,17.581,0,0,0-17.582-17.581Z"></path><path class="a" d="M878.055,888.89a2.48,2.48,0,0,0,2.5-2.5v-6.768a2.5,2.5,0,0,0-5,0v6.768A2.526,2.526,0,0,0,878.055,888.89Z"></path><path class="a" d="M884.751,923.911l-4.193,4.193,0-22a2.5,2.5,0,0,0-5,0v21.924l-4.193-4.193a2.5,2.5,0,0,0-3.532,3.532l8.461,8.461a2.483,2.483,0,0,0,3.529,0l8.46-8.461a2.532,2.532,0,0,0,0-3.532,2.457,2.457,0,0,0-3.529.072Z"></path></g></svg>
 
@@ -57,7 +57,7 @@ const HeroBanner = () => {
                                     SCROLL DOWN <br />
                                     TO EXPLORE
                                 </p>
-                            </Col>
+                            </Col> */}
 
                             <Col className='d-flex flex-column justify-content-center align-items-center'>
 
