@@ -303,7 +303,7 @@ const VaxNowBanner = () => {
                 </Container>
             </Container>
 
-            <Container className='py-4'>
+            {/* <Container className='py-4'>
                 <h5 className='text-center text-black'>
                     <span className='spandarkbefore d-lg-inline-block d-none '>
                     </span>
@@ -312,7 +312,7 @@ const VaxNowBanner = () => {
                     </span>
                 </h5>
 
-            </Container>
+            </Container> */}
         </>
     )
 }

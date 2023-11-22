@@ -34,13 +34,13 @@ const Footer = () => {
 
 
                     <Col className='d-flex flex-column gap-1'>
-                        <Link href="" className='text-decoration-none text-black mt-4 custom-footer-style'>
+                        <Link href="/knowledge-repository" className='text-decoration-none text-black mt-4 custom-footer-style'>
                             Knowledge Repository
                         </Link>
                         <Link href="/impact-stories" className='text-decoration-none text-black custom-footer-style'>
                             Impact Stories
                         </Link>
-                        <Link href="/apply-to-join" className='text-decoration-none text-black custom-footer-style'>
+                        <Link href="https://communityactioncollab.org/join-us/" className='text-decoration-none text-black custom-footer-style'>
                             Apply to join
                         </Link>
                         <Link href="/invest-for-impact" className='text-decoration-none text-black custom-footer-style'>
@@ -49,7 +49,7 @@ const Footer = () => {
                         <Link href="/donate" className='text-decoration-none text-black custom-footer-style'>
                             Donate
                         </Link>
-                        <Link href="" className='text-decoration-none text-black custom-footer-style'>
+                        <Link href="https://communityactioncollab.org/contact-us/" className='text-decoration-none text-black custom-footer-style'>
                             Careers
                         </Link>
                     </Col>
@@ -64,6 +64,14 @@ const Footer = () => {
                             Please write to us at
                             covidactioncollab@catalysts.org
                         </p>
+                        <div className='d-flex flex-row gap-2'>
+                            <Link href="https://www.linkedin.com/showcase/covid-action-collaborative/" target='_blank'>
+                                <i class="bi bi-linkedin"></i>
+                            </Link>
+                            <Link href="https://twitter.com/CovActionCollab" target='_blank'>
+                                <i class="bi bi-twitter-x"></i>
+                            </Link>
+                        </div>
                     </Col>
 
                     <Col lg={5}>

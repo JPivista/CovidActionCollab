@@ -45,8 +45,9 @@ const JoinCac = () => {
                         </Col>
                         <Col className='text-start text-lg-center'>
                             <Link
-                                href="/apply-to-join"
+                                href="https://communityactioncollab.org/join-us/"
                                 className='text-decoration-none rounded-3'
+                                target='_blank'
                                 style={signUpStyle}
                             >
                                 SIGN UP NOW
@@ -60,8 +61,6 @@ const JoinCac = () => {
                         <Col md={9} className='text-start p-3 z-2'>
                             <p>
                                 COVIDActionCollab is not merely an aggregation of partners, but is an aggregation of capacities, through which we have developed key high impact initiatives. We have drawn upon our one year’s experience at CAC and engagement with our large constituency of partners to put together a menu of initiatives for funders/investors to support which will save lives and livelihoods, and enable vulnerable communities to &apos;bounce forward’. Support these initiatives to build resilient communities
-
-
                             </p>
                         </Col>
                         <Col className='py-5 z-2 text-start text-lg-center' >

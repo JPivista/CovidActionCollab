@@ -66,9 +66,9 @@ const ImpactStories = () => {
 
     return (
         <>
-            <Container fluid className='p-5'>
+            <Container fluid className='px-5 pb-5'>
                 <Col className='text-center'>
-                    <h5>
+                    <h5 className='pb-4'>
                         <span className='spandarkbefore d-lg-inline-block d-none'>
                         </span>
                         IMPACT STORIES
@@ -101,7 +101,7 @@ const ImpactStories = () => {
                                     <p className='styles-for-ellipsis'>
                                         <b>
                                             {/* {story.title.rendered} */}
-                                            <div className='fw-bold' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
+                                            <div className='fw-bold pt-2' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
                                         </b>
                                     </p>
                                     <p className='styles-for-ellipsis' >
@@ -125,11 +125,11 @@ const ImpactStories = () => {
                         <div key={story.id} >
                             <div className='p-2' >
                                 <div style={sliderBg} className='align-self-stretch p-2 rounded-3 overflow-y-hidden'>
-                                    <Image src={story.banner_image.guid} alt='' width="100%" height={170} />
+                                    <Image src={story.banner_image.guid} alt='' width="100%" height={180} />
                                     <p className='styles-for-ellipsis'>
                                         <b>
                                             {/* {story.title.rendered} */}
-                                            <div className='fw-bold' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
+                                            <div className='fw-bold pt-2' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
                                         </b>
                                     </p>
                                     <p className='styles-for-ellipsis'>

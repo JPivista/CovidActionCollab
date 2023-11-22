@@ -103,7 +103,7 @@ const OurTeam = () => {
                     </Col>
 
                     <Col className='text-center align-self-stretch' lg={4} md={6}>
-                        <Image src='/who_are_we/naina_6.png' alt='' fluid />
+                        {/* <Image src='/who_are_we/naina_6.png' alt='' fluid /> */}
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
                                 <h5
@@ -238,7 +238,7 @@ const OurTeam = () => {
                     </Col>
 
                     <Col className='text-center align-self-stretch' lg={4} md={6}>
-                        <Image src='/who_are_we/ben_pyne_15.png' alt='' fluid />
+                        {/* <Image src='/who_are_we/ben_pyne_15.png' alt='' fluid /> */}
                         <Col className='text-center'>
                             <Link href="" className='our-team-name text-decoration-none' >
                                 <h5

@@ -192,7 +192,7 @@ const MainHeader = () => {
             </Container>
 
             {isVisibleMobile && (
-                <Container fluid className='d-lg-none d-flex  position-absolute mt-5 pt-2'>
+                <Container fluid className='d-lg-none d-flex position-absolute mt-5 pt-2'>
                     <Container className='d-flex flex-column gap-2' style={{ background: '#2A7A99' }}>
                         <Col>
                             <Link href='/' className='text-decoration-none text-white custom-header-style'>
