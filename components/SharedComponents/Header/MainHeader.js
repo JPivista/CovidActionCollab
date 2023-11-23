@@ -193,7 +193,7 @@ const MainHeader = () => {
 
             {isVisibleMobile && (
                 <Container fluid className='d-lg-none d-flex position-absolute mt-5 pt-2'>
-                    <Container className='d-flex flex-column gap-2' style={{ background: '#2A7A99' }}>
+                    <Container className='d-flex flex-column gap-2 py-2' style={{ background: '#2A7A99' }}>
                         <Col>
                             <Link href='/' className='text-decoration-none text-white custom-header-style'>
                                 SITE HOME
@@ -371,13 +371,13 @@ const MainHeader = () => {
                         </Col>
 
                         <Col>
-                            <Link href='https://communityactioncollab.org/join-us/' className='text-decoration-none bg-white covid-blue apply-to-join-btn p-3' style={{ fontSize: '16px !important' }}>
+                            <Link href='https://communityactioncollab.org/join-us/' className='text-decoration-none bg-white covid-blue apply-to-join-btn-mob p-3' style={{ fontSize: '16px !important' }}>
                                 APPLY TO JOIN
                             </Link>
                         </Col>
 
                         <Col>
-                            <Link href='/log-in' className='text-decoration-none text-white login-btn '>
+                            <Link href='/log-in' className='text-decoration-none text-white login-btn-mob '>
                                 LOG IN
                             </Link>
                         </Col>

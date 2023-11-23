@@ -37,7 +37,7 @@ const JoinCac = () => {
                         </h5>
                     </Col>
 
-                    <Row className='d-flex flex-lg-row flex-column'>
+                    <Row className='d-flex flex-lg-row flex-column p-0 pb-4'>
                         <Col md={9} className='text-start'>
                             <p>
                                 By enrolling you can contribute to and benefit from this collaboration. Also, do encourage other organisations and experts to join hands with us. The key benefits of being part of the collaborative is access to people, resources, financing & partnerships and the ability to make a greater collective impact.
@@ -56,7 +56,7 @@ const JoinCac = () => {
                     </Row>
 
 
-                    <Row className='d-flex flex-wrap flex-row bg-opacity-10 position-relative' style={{}}>
+                    <Row className='d-flex flex-wrap  flex-md-row flex-column bg-opacity-10 position-relative' style={{}}>
                         <span className='position-absolute top-0 bottom-0 start-0 end-0' style={bgOverlayOpacity}> </span>
                         <Col md={9} className='text-start p-3 z-2'>
                             <p>

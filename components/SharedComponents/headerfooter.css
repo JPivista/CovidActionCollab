@@ -11,6 +11,14 @@
     font-weight: 400;
 }
 
-.apply-to-join-btn {
-    
+.apply-to-join-btn-mob {
+    padding: 6px !important;
+    border-radius: 10px !important;
+}
+
+.login-btn-mob {
+    padding: 6px !important;
+    border-radius: 10px !important;
+    background:#FBD037;
+    color: #2A7A99 !important;
 }
