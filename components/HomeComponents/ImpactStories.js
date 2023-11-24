@@ -1,28 +1,21 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import { useRouter } from "next/router";
+// ImpactStories.js
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Container, Col, Image } from 'react-bootstrap';
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import '../../app/globals.css'
+import Link from 'next/link';
 
 const ImpactStories = () => {
-
     const [impactStories, setImpactStories] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/media');
-                // const response = await axios.get('http://localhost:10049/wp-json/wp/v2/impact-story?per_page=15');
-                const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story?per_page=15');
+                const response = await axios.get('https://uat.covidactioncollab.org/wp-json/wp/v2/impact-story');
                 const posts = response.data;
 
                 setImpactStories(posts);
-                // console.log(posts);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -32,13 +25,13 @@ const ImpactStories = () => {
 
     const sliderBg = {
         background: '#9CD4C4'
-    }
+    };
 
     const font19px = {
         fontSize: '19px'
-    }
+    };
 
-    var settings = {
+    const settings = {
         dots: false,
         infinite: true,
         speed: 500,
@@ -48,101 +41,49 @@ const ImpactStories = () => {
         arrows: true,
     };
 
-    var settings1 = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        arrows: true,
-    };
-
-    const formatDate = (dateString) => {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const formattedDate = new Date(dateString).toLocaleDateString('en-US', options);
-        return formattedDate;
-    };
-
     return (
-        <>
-            <Container fluid className='px-5 pb-5'>
-                <Col className='text-center'>
-                    <h5 className='pb-4'>
-                        <span className='spandarkbefore d-lg-inline-block d-none'>
-                        </span>
-                        IMPACT STORIES
-                        <span className='spandarkafter d-lg-inline-block d-none'>
-                        </span>
-                    </h5>
+        <Container fluid className='px-5 pb-5'>
+            <Col className='text-center'>
+                <h5 className='pb-4'>
+                    <span className='spandarkbefore d-lg-inline-block d-none'>
+                    </span>
+                    IMPACT STORIES
+                    <span className='spandarkafter d-lg-inline-block d-none'>
+                    </span>
+                </h5>
+            </Col>
 
-                    {/* <h1>
-                            Post Your Stories Here.!!!
-                        </h1> */}
-                </Col>
+            <Slider {...settings} className='d-md-block d-none'>
+                {impactStories.map((story) => (
+                    <div key={story.id} >
+                        <div className='p-1 '>
+                            <div style={sliderBg} className='align-self-stretch p-2 rounded-3 overflow-y-hidden'>
+                                <Link href={`/impact-story/${story.slug}`}>
 
-                {/* <div>
-                        {impactStories.map((story) => (
-                            <div key={story.id}>
-                                <Image src={story.banner_image.guid} alt='' width={100} height={100} />
+                                    <Image src={story.banner_image.guid} alt='' width="100%" height={170} />
+
+                                </Link>
+                                <p className='styles-for-ellipsis'>
+                                    <b>
+                                        <div className='fw-bold pt-2' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
+                                    </b>
+                                </p>
+                                <p className='styles-for-ellipsis' >
+                                    <div style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
+                                </p>
                                 <p>
-                                    {story.title.rendered}
+                                    <b style={font19px}>
+                                        {/* Assuming 'published_date' is a valid property of your story object */}
+                                        {story.published_date}
+                                    </b>
                                 </p>
                             </div>
-                        ))}
-                    </div> */}
-                <Slider {...settings} className='d-md-block d-none'>
-
-                    {impactStories.map((story) => (
-                        <div key={story.id} >
-                            <div className='p-1 ' >
-                                <div style={sliderBg} className='align-self-stretch p-2 rounded-3 overflow-y-hidden'>
-                                    <Image src={story.banner_image.guid} alt='' width="100%" height={170} />
-                                    <p className='styles-for-ellipsis'>
-                                        <b>
-                                            {/* {story.title.rendered} */}
-                                            <div className='fw-bold pt-2' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
-                                        </b>
-                                    </p>
-                                    <p className='styles-for-ellipsis' >
-                                        <div style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
-                                    </p>
-
-                                    <p>
-                                        <b style={font19px}>
-                                            {formatDate(story.published_date)}
-                                        </b>
-                                    </p>
-                                </div>
-                            </div>
                         </div>
-                    ))}
-                </Slider>
+                    </div>
+                ))}
+            </Slider>
+        </Container>
+    );
+};
 
-                <Slider {...settings1} className='d-md-none d-block'>
-
-                    {impactStories.map((story) => (
-                        <div key={story.id} >
-                            <div className='p-2' >
-                                <div style={sliderBg} className='align-self-stretch p-2 rounded-3 overflow-y-hidden'>
-                                    <Image src={story.banner_image.guid} alt='' width="100%" height={180} />
-                                    <p className='styles-for-ellipsis'>
-                                        <b>
-                                            {/* {story.title.rendered} */}
-                                            <div className='fw-bold pt-2' style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
-                                        </b>
-                                    </p>
-                                    <p className='styles-for-ellipsis'>
-                                        <div style={font19px} dangerouslySetInnerHTML={{ __html: story.title.rendered }} />
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </Container>
-        </>
-    )
-}
-
-export default ImpactStories
+export default ImpactStories;
