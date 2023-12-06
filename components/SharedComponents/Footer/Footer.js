@@ -21,7 +21,7 @@ const Footer = () => {
                         <Link href="/what-is-cac" className='text-decoration-none text-black custom-footer-style'>
                             What is CAC
                         </Link>
-                        <Link href="/who-are-you" className='text-decoration-none text-black custom-footer-style'>
+                        <Link href="/who-we-are" className='text-decoration-none text-black custom-footer-style'>
                             Who we are
                         </Link>
                         <Link href="/our-action" className='text-decoration-none text-black custom-footer-style'>
